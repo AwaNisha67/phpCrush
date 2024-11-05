@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon"href="/images/code.png">
+    <title>PhpCodeCrush</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <h2>PHP Topics</h2>
+                </div>
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP basics</li></p>
+                <a class="java-topics " href="/practice.html">PHP Introduction to php</a>
+                <a class="java-topics " href="/phpSyntax/syntax.html">PHP Syntax</a>
+                <a class="java-topics " href="/phpDt/dt.html">PHP Data Types</a>
+                <a class="java-topics activeTopic" href="/phpString/string.html">PHP Strings</a>
+                <a class="java-topics" href="/phpIfElse/ifElse.html">PHP If..Else..Elseif</a>
+                <a class="java-topics" href="/phpSwitch/switch.html">PHP Switch</a>
+                <a class="java-topics" href="/phpLoops/loops.html" >PHP Loops</a>
+                <a class="java-topics" href="/phpFunction/func.html">PHP Functions</a>
+                <a class="java-topics" href="/phpArrays/arrays.html">PHP Arrays</a>
+                <a class="java-topics " href="/phpSuperGlobals/superGlobal.html">PHP Superglobals</a>
+
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP Forms</li></p>
+                <a class="java-topics " href="/phpForm/formHandle.html">PHP Form Handling</a>
+                <a class="java-topics" href="/phpForm/formValidate.html">PHP Form Validaion</a>
+                <a class="java-topics" href="/phpForm/formRequire.html" >PHP Form Required</a>
+                
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP OOP</li></p>
+                <a class="java-topics" href="/phpOOPs/introToOops.html">PHP What is OOP</a>
+                <a class="java-topics" href="/phpOOPs/classObj.html">PHP Classes/Objects</a>
+                <a class="java-topics" href="/phpOOPs/constructor.html">PHP Constructor</a>
+                <a class="java-topics" href="/phpOOPs/destructor.html">PHP Destructor</a>
+                <a class="java-topics" href="/phpOOPs/inherit.html">PHP Inheritence</a>
+                <a class="java-topics" href="/phpOOPs/abstractClss.html">PHP Abstract Classes</a>
+                <a class="java-topics" href="/phpOOPs/interface.html">PHP Interfaces</a>
+           </div>
+
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <h2>PHP Strings</h2>
+                </div>
+
+                <div class="right-table-content">
+                    <!-- content over here  -->
+                    <h4>PHP Strings: A Comprehensive Guide</h4>
+                    <p>In PHP, a <strong>string</strong> is a sequence of characters used to represent text. PHP provides various ways to work with strings, allowing you to manipulate, compare, and format text in your applications. Understanding how to handle strings effectively is essential for building dynamic and interactive websites.</p>
+                    
+                    <h5>1. What is a String in PHP?</h5>
+                    <p>A <strong>string</strong> is a data type that holds a sequence of characters. It can include letters, numbers, symbols, and whitespace. In PHP, strings are used to store and manipulate text-based data, such as user input, file content, or even dynamic content displayed on a webpage.</p> 
+                    <ul>
+                        <li>Syntax Example:</li>
+                        <div class="code-text">
+                            <code>
+                                $name = "John Doe";   // Simple string<br>
+                                $greeting = 'Hello, World!';  // Another string using single quotes
+                            </code>
+                        </div>
+                    </ul>
+                    
+                    <h5>2. Types of Strings in PHP</h5>
+                    
+                    <h6>2.1 Single-quoted Strings</h6>
+                    <p>A string enclosed in single quotes (<code>'</code>) is considered a <strong>single-quoted string</strong> in PHP. The key difference is that escape sequences like <code>\n</code> (newline) or <code>\t</code> (tab) are not processed inside single-quoted strings. The only exception is escaping a single quote (<code>\'</code>) or a backslash (<code>\\</code>).</p>
+                    <ul>
+                        <li>Example:</li>
+                        <div class="code-text">
+                            <code>
+                                $greeting = 'Hello, John!';<br>
+                                echo $greeting;   // Output: Hello, John!
+                            </code>
+                        </div>
+                        <li>Special Character Escaping:</li>
+                        <div class="code-text">
+                            <code>
+                                $escaped = 'It\'s a nice day!';   // Escapes single quote<br>
+                                echo $escaped;   // Output: It's a nice day!
+                            </code>
+                        </div>
+                    </ul>
+                    
+                    <h6>2.2 Double-quoted Strings</h6>
+                    <p>A string enclosed in double quotes (<code>"</code>) is a <strong>double-quoted string</strong> in PHP. In contrast to single-quoted strings, escape sequences like <code>\n</code> (new line), <code>\t</code> (tab), <code>\r</code> (carriage return), and others are processed inside double-quoted strings. Additionally, variables inside double quotes are evaluated and displayed.</p>
+                    <ul>
+                        <li>Example:</li>
+                        <div class="code-text">
+                            <code>
+                                $name = "Alice";<br>
+                                $greeting = "Hello, $name!";<br>
+                                echo $greeting;   // Output: Hello, Alice!
+                            </code>
+                        </div>
+                        <li>Special Character Escaping:</li>
+                        <div class="code-text">
+                            <code>
+                                $escaped = "He said, \"Hello, World!\"";   // Escapes double quotes<br>
+                                echo $escaped;   // Output: He said, "Hello, World!"
+                            </code>
+                        </div>
+                    </ul>
+                    
+                    <h5>3. String Concatenation</h5>
+                    <p>In PHP, you can concatenate (join) strings using the <strong>dot operator (<code>.</code>)</strong>. This is useful when you want to combine variables or text into a single string.</p>
+                    <ul>
+                        <li>Example:</li>
+                        <div class="code-text">
+                            <code>
+                                $firstName = "John";<br>
+                                $lastName = "Doe";<br>
+                                $fullName = $firstName . " " . $lastName;<br>
+                                echo $fullName;  // Output: John Doe
+                            </code>
+                        </div>
+                        <li>Concatenation with Double-quoted Strings:</li>
+                        <div class="code-text">
+                            <code>
+                                $age = 30;<br>
+                                $message = "My name is $firstName and I am {$age} years old.";<br>
+                                echo $message;  // Output: My name is John and I am 30 years old.
+                            </code>
+                        </div>
+                    </ul>
+                    
+                    <h5>4. String Length and Manipulation Functions</h5>
+                    <p>PHP provides a variety of built-in functions for working with strings. These functions allow you to measure string length, change case, replace parts of a string, and much more.</p>
+                    <ul>
+                        <li><strong>strlen()</strong> - Get String Length</li>
+                        <div class="code-text">
+                            <code>
+                                $str = "Hello, World!";<br>
+                                echo strlen($str);  // Output: 13
+                            </code>
+                        </div>
+                    
+                        <li><strong>strtoupper()</strong> - Convert to Uppercase</li>
+                        <div class="code-text">
+                            <code>
+                                $str = "hello";<br>
+                                echo strtoupper($str);  // Output: HELLO
+                            </code>
+                        </div>
+                    
+                        <li><strong>strtolower()</strong> - Convert to Lowercase</li>
+                        <div class="code-text">
+                            <code>
+                                $str = "HELLO";<br>
+                                echo strtolower($str);  // Output: hello
+                            </code>
+                        </div>
+                    
+                        <li><strong>ucwords()</strong> - Capitalize the First Letter of Each Word</li>
+                        <div class="code-text">
+                            <code>
+                                $str = "hello world";<br>
+                                echo ucwords($str);  // Output: Hello World
+                            </code>
+                        </div>
+                    
+                        <li><strong>substr()</strong> - Extract a Portion of a String</li>
+                        <div class="code-text">
+                            <code>
+                                $str = "Hello, World!";<br>
+                                echo substr($str, 7, 5);  // Output: World
+                            </code>
+                        </div>
+                    
+                        <li><strong>str_replace()</strong> - Replace Part of a String</li>
+                        <div class="code-text">
+                            <code>
+                                $str = "I like apples.";<br>
+                                echo str_replace("apples", "oranges", $str);  // Output: I like oranges.
+                            </code>
+                        </div>
+                    </ul>
+                    
+                    <h5>5. Multiline Strings</h5>
+                    <h6>5.1 Heredoc Syntax</h6>
+                    <p>PHP also supports a special syntax called <strong>Heredoc</strong> for working with multiline strings. Heredoc allows you to define a string without using quotes, and it can span multiple lines.</p>
+                    <ul>
+                        <li>Example:</li>
+                        <div class="code-text">
+                            <code>
+                                $str = &lt;&lt;<EOD<br>
+                                This is a multiline string<br>
+                                using Heredoc syntax.<br>
+                                It can contain variables like $name.<br>
+                                EOD;<br>
+                                echo $str;
+                            </code>
+                        </div>
+                    </ul>
+                    
+                    <h6>5.2 Nowdoc Syntax</h6>
+                    <p><strong>Nowdoc</strong> is similar to Heredoc but is used when you don't want variable parsing inside the string. It behaves like a single-quoted string, and no variables will be replaced.</p>
+                    <ul>
+                        <li>Example:</li>
+                        <div class="code-text">
+                            <code>
+                                $str = &lt;&lt;&lt;'EOD'<br>
+                                This is a Nowdoc string<br>
+                                where $name is not parsed.<br>
+                                EOD;<br>
+                                echo $str;
+                            </code>
+                        </div>
+                    </ul>
+                    
+                    <h5>6. Escape Sequences in Strings</h5>
+                    <p>In both single and double-quoted strings, PHP supports special escape sequences. Some of the most common escape sequences are:</p>
+                    <ul>
+                        <li><code>\\</code> — Backslash</li>
+                        <li><code>\'</code> — Single quote</li>
+                        <li><code>\"</code> — Double quote</li>
+                        <li><code>\n</code> — Newline</li>
+                        <li><code>\r</code> — Carriage return</li>
+                        <li><code>\t</code> — Tab</li>
+                        <li><code>\$</code> — Dollar sign</li>
+                    </ul>
+                    <ul>
+                        <li>Example:</li>
+                        <div class="code-text">
+                            <code>
+                                $str = "This is a backslash: \\ and a newline: \n";<br>
+                                echo $str;
+                            </code>
+                        </div>
+                    </ul>
+                    
+                    <h5>7. Comparing Strings</h5>
+                    <p>You can compare strings in PHP using various comparison operators, such as <code>==</code>, <code>===</code>, <code>!=</code>, <code><</code>, and <code>></code>.</p>
+                    <ul>
+                        <li>Example:</li>
+                        <div class="code-text">
+                            <code>
+                                $str1 = "apple";<br>
+                                $str2 = "banana";<br>
+                                if ($str1 == $str2) {<br>
+                                    echo "The strings are equal.";<br>
+                                } else {<br>
+                                    echo "The strings are not equal.";  // Output: The strings are not equal.<br>
+                                }
+                            </code>
+                        </div>
+                        <ul>
+                            <li><strong>==</strong> checks if the values are equal.</li>
+                            <li><strong>===</strong> checks if both the values and the data types are equal (strict comparison).</li>
+                        </ul>
+                    </ul>
+                    
+                    <h5>8. Conclusion</h5>
+                    <p>Strings are one of the most important data types in PHP, and knowing how to manipulate and work with them is crucial for building dynamic and interactive websites. From simple text handling to complex formatting, PHP provides a wide array of functions to make working with strings easier.</p>
+                    <p>Whether you're concatenating strings, comparing them, or performing operations on them, understanding how to use PHP strings is essential to becoming a proficient PHP developer.</p>
+                    
+                </div>
+              
+                </div> 
+          
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

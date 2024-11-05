@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon"href="/images/code.png">
+    <title>PhpCodeCrush</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <h2>PHP Topics</h2>
+                </div>
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP OOP</li></p>
+                <a class="java-topics" href="/phpOOPs/introToOops.html">PHP What is OOP</a>
+                <a class="java-topics activeTopic" href="/phpOOPs/classObj.html">PHP Classes/Objects</a>
+                <a class="java-topics" href="/phpOOPs/constructor.html">PHP Constructor</a>
+                <a class="java-topics" href="/phpOOPs/destructor.html">PHP Destructor</a>
+                <a class="java-topics" href="/phpOOPs/inherit.html">PHP Inheritence</a>
+                <a class="java-topics" href="/phpOOPs/abstractClss.html">PHP Abstract Classes</a>
+                <a class="java-topics" href="/phpOOPs/interface.html">PHP Interfaces</a>
+
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP basics</li></p>
+                <a class="java-topics" href="/practice.html">PHP Introduction to php</a>
+                <a class="java-topics " href="/phpSyntax/syntax.html">PHP Syntax</a>
+                <a class="java-topics" href="/phpDt/dt.html">PHP Data Types</a>
+                <a class="java-topics " href="/phpSuperGlobals/superGlobal.html">PHP Superglobals</a>
+                <a class="java-topics" href="/phpString/string.html">PHP Strings</a>
+                <a class="java-topics" href="/phpIfElse/ifElse.html">PHP If..Else..Elseif</a>
+                <a class="java-topics" href="/phpSwitch/switch.html">PHP Switch</a>
+                <a class="java-topics" href="/phpLoops/loops.html" >PHP Loops</a>
+                <a class="java-topics" href="/phpFunction/func.html">PHP Functions</a>
+                <a class="java-topics" href="/phpArrays/arrays.html">PHP Arrays</a>
+
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP Forms</li></p>
+                <a class="java-topics " href="/phpForm/formHandle.html">PHP Form Handling</a>
+                <a class="java-topics" href="/phpForm/formValidate.html">PHP Form Validaion</a>
+                <a class="java-topics" href="/phpForm/formRequire.html" >PHP Form Required</a>
+                
+           </div>
+
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <h2>PHP Class and Objects</h2>
+                </div>
+
+                <div class="right-table-content">
+         <h4>7. PHP Classes and Objects</h4>
+<p>In PHP, classes and objects form the core of Object-Oriented Programming (OOP). A class is a blueprint for creating objects, which are instances of that class. Classes define the properties (variables) and methods (functions) that objects will have.</p> <br>
+
+<h5>7.1 Defining a PHP Class</h5>
+<p>A class is defined using the <code>class</code> keyword, followed by the class name and a pair of curly braces. Inside the class, we define properties (variables) and methods (functions) that the objects will have.</p>
+<ul>
+    <li><strong>Syntax Example:</strong></li>
+    <div class="code-text">
+        <code>
+            class Car {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; // Properties (variables)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; public $color;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; public $model;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; // Method (function)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; public function drive() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; echo "The " . $this->model . " is driving.<br>";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            }<br>
+        </code>
+    </div>
+    <p>In this example, the class <code>Car</code> is defined with two properties: <code>color</code> and <code>model</code>. It also has a method called <code>drive()</code> that outputs a message when called.</p>
+</ul>
+
+<h5>7.2 Creating an Object</h5>
+<p>Once a class is defined, you can create objects (instances) of that class using the <code>new</code> keyword. Each object will have its own set of properties and can call the methods of the class.</p>
+<ul>
+    <li><strong>Syntax Example:</strong></li>
+    <div class="code-text">
+        <code>
+            // Creating an object of the "Car" class<br>
+            $myCar = new Car();<br><br>
+
+            // Accessing and setting properties<br>
+            $myCar->color = "Red";<br>
+            $myCar->model = "Toyota";<br><br>
+
+            // Calling a method<br>
+            echo "My car color is " . $myCar->color . ".<br>";<br>
+            $myCar->drive();  // Calling the drive() method
+        </code>
+    </div>
+    <p>In this example, we create a new object <code>$myCar</code> from the <code>Car</code> class, assign values to its properties, and call its method <code>drive()</code>.</p>
+</ul>
+
+<h5>7.3 Access Modifiers in PHP Classes</h5>
+<p>In PHP, we can control the visibility of properties and methods in a class using access modifiers:</p>
+<ul>
+    <li><strong>public</strong>: The property or method is accessible from anywhere.</li>
+    <li><strong>private</strong>: The property or method is only accessible within the class itself.</li>
+    <li><strong>protected</strong>: The property or method is accessible within the class and by subclasses.</li>
+</ul>
+
+<h5>7.4 Example of Using Access Modifiers</h5>
+<p>Here’s an example of a class using different access modifiers:</p>
+<ul>
+    <li><strong>Syntax Example:</strong></li>
+    <div class="code-text">
+        <code>
+            class Car {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; private $color;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; protected $model;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; public $year;<br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp; public function setColor($color) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $this->color = $color;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp; public function getColor() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return $this->color;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            }<br><br>
+
+            $myCar = new Car();<br>
+            $myCar->setColor("Blue");<br>
+            echo "The car color is: " . $myCar->getColor();<br>
+        </code>
+    </div>
+    <p>This example demonstrates how to use public methods to access private properties.</p>
+</ul>
+
+                </div>
+              
+                </div> 
+          
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

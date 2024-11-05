@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon"href="/images/code.png">
+    <title>PhpCodeCrush</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <h2>PHP Topics</h2>
+                </div>
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP OOP</li></p>
+                <a class="java-topics" href="/phpOOPs/introToOops.html">PHP What is OOP</a>
+                <a class="java-topics " href="/phpOOPs/classObj.html">PHP Classes/Objects</a>
+                <a class="java-topics" href="/phpOOPs/constructor.html">PHP Constructor</a>
+                <a class="java-topics" href="/phpOOPs/destructor.html">PHP Destructor</a>
+                <a class="java-topics" href="/phpOOPs/inherit.html">PHP Inheritence</a>
+                <a class="java-topics" href="/phpOOPs/abstractClss.html">PHP Abstract Classes</a>
+                <a class="java-topics activeTopic" href="/phpOOPs/interface.html">PHP Interfaces</a>
+
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP basics</li></p>
+                <a class="java-topics" href="/practice.html">PHP Introduction to php</a>
+                <a class="java-topics " href="/phpSyntax/syntax.html">PHP Syntax</a>
+                <a class="java-topics" href="/phpDt/dt.html">PHP Data Types</a>
+                <a class="java-topics " href="/phpSuperGlobals/superGlobal.html">PHP Superglobals</a>
+                <a class="java-topics" href="/phpString/string.html">PHP Strings</a>
+                <a class="java-topics" href="/phpIfElse/ifElse.html">PHP If..Else..Elseif</a>
+                <a class="java-topics" href="/phpSwitch/switch.html">PHP Switch</a>
+                <a class="java-topics" href="/phpLoops/loops.html" >PHP Loops</a>
+                <a class="java-topics" href="/phpFunction/func.html">PHP Functions</a>
+                <a class="java-topics" href="/phpArrays/arrays.html">PHP Arrays</a>
+                
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP Forms</li></p>
+                <a class="java-topics " href="/phpForm/formHandle.html">PHP Form Handling</a>
+                <a class="java-topics" href="/phpForm/formValidate.html">PHP Form Validaion</a>
+                <a class="java-topics" href="/phpForm/formRequire.html" >PHP Form Required</a>
+                
+           </div>
+
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <h2>PHP Interfaces</h2>
+                </div>
+
+                <div class="right-table-content">
+                    <h4>12. PHP Interfaces</h4>
+                    <p><strong>Interfaces</strong> in PHP are similar to abstract classes, but they can only contain method signatures (without implementation) and constants. An interface allows you to define a contract that implementing classes must follow. It defines a set of methods that must be implemented by any class that claims to implement the interface.</p><br>
+                    
+                    <h5>12.1 Defining an Interface</h5>
+                    <p>In PHP, an interface is declared using the <code>interface</code> keyword. Unlike abstract classes, interfaces cannot contain any code; they only specify what methods a class must implement. Any class that implements an interface must provide an implementation for all of the interface's methods.</p>
+                    <ul>
+                        <li><strong>Syntax Example:</strong></li>
+                        <div class="code-text">
+                            <code>
+                                interface Animal {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function makeSound();<br>
+                                }<br><br>
+                    
+                                class Dog implements Animal {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function makeSound() {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; echo "Bark!";<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                }<br><br>
+                    
+                                // Instantiating the Dog class<br>
+                                $dog = new Dog();<br>
+                                $dog->makeSound();  // Output: Bark!
+                            </code>
+                        </div>
+                        <p>In this example, the <code>Animal</code> interface defines the <code>makeSound()</code> method, which the <code>Dog</code> class implements. The <code>Dog</code> class is required to define the <code>makeSound()</code> method since it implements the <code>Animal</code> interface.</p>
+                    </ul>
+                    
+                    <h5>12.2 Key Points About PHP Interfaces</h5>
+                    <ul>
+                        <li><strong>Interface Method Signatures:</strong> All methods in an interface must be declared public and cannot contain any code. They define the signature (name, parameters, and return type) of the methods that must be implemented in the class.</li>
+                        <li><strong>Class Implementing Multiple Interfaces:</strong> A class can implement more than one interface. This allows you to create flexible and modular code by combining behaviors from different interfaces.</li>
+                        <li><strong>Cannot Instantiate an Interface:</strong> You cannot create an instance of an interface directly. You must create an instance of a class that implements the interface.</li>
+                        <li><strong>Implementing Methods:</strong> A class that implements an interface must implement all the methods defined in the interface.</li>
+                        <li><strong>Interfaces and Inheritance:</strong> A class can extend another class and also implement one or more interfaces. This allows a class to inherit functionality from a parent class and also adhere to multiple contracts defined by interfaces.</li>
+                    </ul>
+                    
+                    <h5>12.3 Example: Multiple Interfaces Implementation</h5>
+                    <p>PHP allows a class to implement multiple interfaces. This is a great way to combine various functionalities in a single class without using complex inheritance hierarchies.</p>
+                    <ul>
+                        <li><strong>Syntax Example:</strong></li>
+                        <div class="code-text">
+                            <code>
+                                interface Animal {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function makeSound();<br>
+                                }<br><br>
+                    
+                                interface Movable {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function move();<br>
+                                }<br><br>
+                    
+                                class Dog implements Animal, Movable {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function makeSound() {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; echo "Bark!";<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                    
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function move() {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; echo "Running...";<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                }<br><br>
+                    
+                                $dog = new Dog();<br>
+                                $dog->makeSound();  // Output: Bark!<br>
+                                $dog->move();       // Output: Running...
+                            </code>
+                        </div>
+                        <p>In this example, the <code>Dog</code> class implements two interfaces: <code>Animal</code> and <code>Movable</code>. The <code>Dog</code> class is required to implement the methods <code>makeSound()</code> and <code>move()</code>, which are defined in the respective interfaces.</p>
+                    </ul>
+                    
+                    <h5>12.4 When to Use Interfaces</h5>
+                    <ul>
+                        <li><strong>Decoupling Code:</strong> Interfaces allow you to define a contract that multiple classes can follow, enabling you to decouple different parts of your application. This is especially useful in large-scale applications and when working with third-party libraries.</li>
+                        <li><strong>Multiple Inheritance:</strong> Since PHP does not support multiple inheritance, interfaces provide a way to achieve a form of multiple inheritance. A class can implement multiple interfaces, thus inheriting behaviors from different sources.</li>
+                        <li><strong>Enforcing Consistency:</strong> Interfaces are ideal for enforcing consistency across various classes. For example, if multiple classes represent different types of payment gateways (like PayPal, Stripe, etc.), you could create a common <code>PaymentGateway</code> interface that all classes must implement.</li>
+                    </ul>
+                    
+                </div>
+              
+                </div> 
+          
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

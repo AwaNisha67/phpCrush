@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon"href="/images/code.png">
+    <title>PhpCodeCrush</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <h2>PHP Topics</h2>
+                </div>
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP basics</li></p>
+                <a class="java-topics " href="/practice.html">PHP Introduction to php</a>
+                <a class="java-topics " href="/phpSyntax/syntax.html">PHP Syntax</a>
+                <a class="java-topics activeTopic" href="/phpDt/dt.html">PHP Data Types</a>
+                <a class="java-topics" href="/phpString/string.html">PHP Strings</a>
+                <a class="java-topics" href="/phpIfElse/ifElse.html">PHP If..Else..Elseif</a>
+                <a class="java-topics" href="/phpSwitch/switch.html">PHP Switch</a>
+                <a class="java-topics" href="/phpLoops/loops.html" >PHP Loops</a>
+                <a class="java-topics" href="/phpFunction/func.html">PHP Functions</a>
+                <a class="java-topics" href="/phpArrays/arrays.html">PHP Arrays</a>
+                <a class="java-topics " href="/phpSuperGlobals/superGlobal.html">PHP Superglobals</a>
+
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP Forms</li></p>
+                <a class="java-topics " href="/phpForm/formHandle.html">PHP Form Handling</a>
+                <a class="java-topics" href="/phpForm/formValidate.html">PHP Form Validaion</a>
+                <a class="java-topics" href="/phpForm/formRequire.html" >PHP Form Required</a>
+                
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP OOP</li></p>
+                <a class="java-topics" href="/phpOOPs/introToOops.html">PHP What is OOP</a>
+                <a class="java-topics" href="/phpOOPs/classObj.html">PHP Classes/Objects</a>
+                <a class="java-topics" href="/phpOOPs/constructor.html">PHP Constructor</a>
+                <a class="java-topics" href="/phpOOPs/destructor.html">PHP Destructor</a>
+                <a class="java-topics" href="/phpOOPs/inherit.html">PHP Inheritence</a>
+                <a class="java-topics" href="/phpOOPs/abstractClss.html">PHP Abstract Classes</a>
+                <a class="java-topics" href="/phpOOPs/interface.html">PHP Interfaces</a>
+           </div>
+
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <h2>PHP DataTypes</h2>
+                </div>
+
+                <div class="right-table-content">
+                    <!-- content over here  -->
+                    <h1>PHP Data Types: An In-Depth Guide</h1>
+                   <p> In PHP, data types define the kind of data a variable can hold. Understanding data types is fundamental because it helps in managing and manipulating data effectively in your PHP programs. PHP is a loosely-typed language, meaning that you do not need to declare the data type of a variable explicitly. PHP automatically converts data from one type to another as needed. However, knowing the different types of data available in PHP and when to use them is essential for efficient coding.</p>
+
+                    <h2>1. Scalar Data Types</h2>
+                        <p> Scalar data types hold a single value. There are four scalar types in PHP:</p> 
+                            <h4>1.1 Integer:-</h4>                    
+                                 <p>An integer is a whole number without any decimal point. It can be positive, negative, or zero.</p>
+                            <ul>
+                                 <li>Syntax Example:</li>
+                                 <div class="code-text">
+                                <code>
+                                        $age = 25;       // Integer value
+                                        $negativeNum = -50; // Negative integer
+                                        $zeroValue = 0;   // Zero integer
+                                </code>
+                            </div>
+                                <li>Range:</li>
+                                     <p>The range of an integer depends on your system and architecture (e.g., 32-bit or 64-bit). On a 64-bit system, the range of integers is from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
+                                     </p>
+                                 <li>Useful Functions:</li>
+                                   <ul>
+                                         <li>is_int($variable):-Checks if the variable is an integer.</li>
+                                         <li>intval($variable):-Converts a variable to an integer.</li>
+                                   </ul>
+                            </ul>
+                            <h4>1.2 Float (Double or Real)</h4>
+                            <p>A float (also known as double or real) is a number that has a decimal point or is expressed in exponential form.</p>
+                            <ul>
+                                <li>Syntax Example:</li>
+                                <div class="code-text">
+                                <code>
+                                    $pi = 3.14159;        // Float value
+                                    $temperature = -27.5; // Negative float value
+                                    $scientific = 1.5e3;  // 1.5 * 10^3 = 1500 (Scientific notation)
+                                </code>
+                                </div>
+                                <li>Range: Floats have a range of about ±3.14 × 10^38 with a precision of 14 decimal digits.</li>
+                                <li>Useful Functions:</li>
+                                <ul>
+                                    <li>is_float($variable) — Checks if the variable is a float.</li>
+                                    <li>floatval($variable) — Converts a variable to a float.</li>
+                                </ul>
+                            </ul>
+                            <h4>1.3 String</h4>
+                            <p>A string is a sequence of characters. It can be text, numbers, or any characters enclosed in quotes (either single <span>'</span> or double <span>"</span> quotes).</p>
+                            <ul>
+                                <li>Syntax Example:</li>
+                                <div class="code-text">
+                                <code>
+                                    $message = "Hello, World!";   // String enclosed in double quotes
+                                    $name = 'John Doe';           // String enclosed in single quotes
+
+                                </code>
+                                </div>
+                                <li>Escaping Special Characters: <br>
+                                    Single quotes: To include a single quote, escape it with a backslash: \'. <br>
+Double quotes: You can embed variables and special characters (like \n for a newline) inside double quotes <br>
+                                </li>
+                                <li>Useful Functions:</li>
+                                <ul>
+                                    <li>is_string($variable) — Checks if the variable is a string.</li>
+                                    <li>strlen($string) — Returns the length of the string.</li>
+                                    <li>strtolower($string) — Converts a string to lowercase.</li>
+                                    <li>strtoupper($string) — Converts a string to uppercase.</li>
+                                </ul>
+                            </ul>
+                            <h4>1.4 Boolean</h4>
+                            <p>A boolean is a type that can only have two values: <span>TRUE</span> or <span>FALSE</span>. It is commonly used for decision-making in control structures like if statements.</p> <br>
+                            <ul>
+                                <li>Syntax Example:</li>
+                                <div class="code-text">
+                                <code>
+                                    $isAdmin = true;    // Boolean value
+                                    $isLoggedIn = false; // Boolean value
+                                </code>
+                                </div>
+                                <li>Useful Functions:</li>
+                                <ul>
+                                    <li>is_bool($variable) — Checks if the variable is a boolean.</li>
+                                    <li>var_dump($variable) — Outputs the type and value of the variable, useful for debugging.</li>
+                                </ul>
+                            </ul>
+
+                            <!-- copied -->
+                            <h4>2. Compound Data Types</h4>
+                            <p>Compound data types are used to store multiple values or more complex data structures. There are two main compound data types in PHP:</p> <br>
+                            
+                            <h5>2.1 Array</h5>
+                            <p>An <strong>array</strong> is a collection of values, where each value is stored under a specific key or index. Arrays can be indexed (numerical) or associative (string-based keys).</p>
+                            <ul>
+                                <li>Indexed Array Example:</li>
+                                <div class="code-text">
+                                <code>
+                                    $fruits = array("Apple", "Banana", "Cherry");<br>
+                                    echo $fruits[0];  // Output: Apple
+                                </code>
+                                </div>
+                                <li>Associative Array Example:</li>
+                                <div class="code-text">
+                                <code>
+                                    $person = array("name" => "John", "age" => 25);<br>
+                                    echo $person["name"];  // Output: John
+                                </code>
+                                </div>
+                                <li>Useful Functions:</li>
+                                <ul>
+                                    <li>is_array($variable) — Checks if the variable is an array.</li>
+                                    <li>count($array) — Returns the number of elements in an array.</li>
+                                    <li>array_push($array, $value) — Adds an element to the end of an array.</li>
+                                </ul>
+                            </ul>
+                            
+                            <h5>2.2 Object</h5>
+                            <p>An <strong>object</strong> is an instance of a class in object-oriented programming (OOP). Objects can store data in properties and define behavior in methods.</p> <br>
+                            <ul>
+                                <li>Syntax Example:</li>
+                                
+                                <div class="code-text">
+                                <code>
+                                    class Car {<br>
+                                        public $model;<br>
+                                        public $year;<br>
+                                        function __construct($model, $year) {<br>
+                                            $this->model = $model;<br>
+                                            $this->year = $year;<br>
+                                        }<br>
+                                        function displayInfo() {<br>
+                                            echo "Model: $this->model, Year: $this->year";<br>
+                                        }<br>
+                                    }<br>
+                                    $myCar = new Car("Toyota", 2020);<br>
+                                    $myCar->displayInfo();  // Output: Model: Toyota, Year: 2020
+                                </code>
+                                </div>
+                                <li>Useful Functions:</li>
+                                <ul>
+                                    <li>is_object($variable) — Checks if the variable is an object.</li>
+                                    <li>get_class($object) — Returns the class name of an object.</li>
+                                </ul>
+                            </ul>
+                            
+                            <h4>3. Special Data Types</h4>
+                            <p>PHP also has a few special data types:</p> <br>
+                            
+                            <h5>3.1 NULL</h5>
+                            <p>The <strong>NULL</strong> data type represents a variable with no value. A variable is considered <code>NULL</code> if it has been assigned the value <code>NULL</code>, or if it has not been initialized.</p> <br>
+                            <ul>
+                                <li>Syntax Example:</li>
+                                <div class="code-text">
+                                <code>
+                                    $var = NULL;  // Variable with no value
+                                </code>
+                                </div>
+                                <li>Useful Functions:</li>
+                                <ul>
+                                    <li>is_null($variable) — Checks if the variable is NULL.</li>
+                                    <li>unset($variable) — Destroys a variable.</li>
+                                </ul>
+                            </ul>
+                            
+                            <h5>3.2 Resource</h5>
+                            <p>A <strong>resource</strong> is a special variable that holds a reference to an external resource, such as a database connection or a file handle. It is not a data type per se, but rather a reference to an external resource that PHP can interact with.</p> <br>
+                            <ul>
+                                <li>Syntax Example:</li>
+                                <div class="code-text">
+                                <code>
+                                    $file = fopen("example.txt", "r");  // Open a file and store the resource
+                                </code>
+                                </div>
+                                <li>Useful Functions:</li>
+                                <ul>
+                                    <li>is_resource($variable) — Checks if the variable is a resource.</li>
+                                    <li>fclose($resource) — Closes the resource, like a file handle.</li>
+                                </ul>
+                            </ul>
+                            
+                </div>
+              
+                </div> 
+          
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

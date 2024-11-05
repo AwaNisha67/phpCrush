@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon"href="/images/code.png">
+    <title>PhpCodeCrush</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <h2>PHP Topics</h2>
+                </div>
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP OOP</li></p>
+                <a class="java-topics activeTopic" href="/phpOOPs/introToOops.html">PHP What is OOP</a>
+                <a class="java-topics " href="/phpOOPs/classObj.html">PHP Classes/Objects</a>
+                <a class="java-topics" href="/phpOOPs/constructor.html">PHP Constructor</a>
+                <a class="java-topics" href="/phpOOPs/destructor.html">PHP Destructor</a>
+                <a class="java-topics" href="/phpOOPs/inherit.html">PHP Inheritence</a>
+                <a class="java-topics" href="/phpOOPs/abstractClss.html">PHP Abstract Classes</a>
+                <a class="java-topics" href="/phpOOPs/interface.html">PHP Interfaces</a>
+
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP basics</li></p>
+                <a class="java-topics" href="/practice.html">PHP Introduction to php</a>
+                <a class="java-topics " href="/phpSyntax/syntax.html">PHP Syntax</a>
+                <a class="java-topics" href="/phpDt/dt.html">PHP Data Types</a>
+                <a class="java-topics " href="/phpSuperGlobals/superGlobal.html">PHP Superglobals</a>
+                <a class="java-topics" href="/phpString/string.html">PHP Strings</a>
+                <a class="java-topics" href="/phpIfElse/ifElse.html">PHP If..Else..Elseif</a>
+                <a class="java-topics" href="/phpSwitch/switch.html">PHP Switch</a>
+                <a class="java-topics" href="/phpLoops/loops.html" >PHP Loops</a>
+                <a class="java-topics" href="/phpFunction/func.html">PHP Functions</a>
+                <a class="java-topics" href="/phpArrays/arrays.html">PHP Arrays</a>
+
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP Forms</li></p>
+                <a class="java-topics " href="/phpForm/formHandle.html">PHP Form Handling</a>
+                <a class="java-topics" href="/phpForm/formValidate.html">PHP Form Validaion</a>
+                <a class="java-topics" href="/phpForm/formRequire.html" >PHP Form Required</a>
+                
+                
+           </div>
+
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <h2>PHP Introduction to Object-oriented Programming</h2>
+                </div>
+
+                <div class="right-table-content">
+                    <h4>5. PHP Introduction to Object-Oriented Programming (OOP)</h4>
+<p>Object-Oriented Programming (OOP) is a programming paradigm in PHP that focuses on using objects and classes. It allows you to create more structured, reusable, and maintainable code by organizing your code into "objects" that can represent real-world entities.</p> <br>
+
+<h5>5.1 Key Concepts in OOP</h5>
+<p>There are several key concepts in OOP that form the foundation of object-oriented programming:</p>
+<ul>
+    <li><strong>Classes</strong>: A class is a blueprint for creating objects. It defines the properties and methods that an object will have.</li>
+    <li><strong>Objects</strong>: An object is an instance of a class. Objects hold data and can perform actions using methods defined in their class.</li>
+    <li><strong>Encapsulation</strong>: The practice of bundling data (properties) and methods (functions) together in a class. Encapsulation allows for access control to properties, preventing direct modification from outside the class.</li>
+    <li><strong>Inheritance</strong>: Inheritance allows a class to inherit properties and methods from another class, promoting code reuse and extension.</li>
+    <li><strong>Polymorphism</strong>: Polymorphism allows objects of different classes to be treated as objects of a common parent class, enabling flexibility in code.</li>
+    <li><strong>Abstraction</strong>: Abstraction hides complex implementation details and provides a simple interface to interact with objects.</li>
+</ul>
+
+<h5>5.2 Why Use OOP in PHP?</h5>
+<ul>
+    <li><strong>Code Reusability</strong>: Once a class is written, it can be reused to create multiple objects without rewriting code.</li>
+    <li><strong>Maintainability</strong>: OOP helps in organizing code into classes and objects, making it easier to maintain and update the codebase.</li>
+    <li><strong>Modularity</strong>: Code is organized into classes, which can be individually modified or updated without affecting the entire application.</li>
+    <li><strong>Real-World Modeling</strong>: OOP allows developers to represent real-world entities like cars, animals, users, etc., using objects.</li>
+</ul>
+
+<h5>5.3 Basic Syntax of Classes and Objects</h5>
+<p>The basic syntax for creating a class and instantiating an object is as follows:</p>
+<ul>
+    <li>Syntax Example:</li>
+    <div class="code-text">
+        <code>
+            class Car {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; // Properties<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; public $color;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; public $model;<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; // Methods<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; public function drive() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; echo "Driving...";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+            }<br><br>
+            $myCar = new Car();<br>
+            $myCar->color = "red";<br>
+            $myCar->model = "Toyota";<br>
+            $myCar->drive(); // Outputs: "Driving..."
+        </code>
+    </div>
+    <li>Explanation:</li>
+    <p>In this example, the <code>Car</code> class is defined with two properties: <code>color</code> and <code>model</code>, and one method: <code>drive()</code>. We then create a new <code>Car</code> object and assign values to its properties.</p>
+</ul>
+
+<h5>5.4 Access Modifiers in OOP</h5>
+<p>PHP provides three access modifiers for controlling the visibility of class properties and methods:</p>
+<ul>
+    <li><strong>public</strong>: The property or method is accessible from outside the class.</li>
+    <li><strong>private</strong>: The property or method is only accessible within the class where it is defined.</li>
+    <li><strong>protected</strong>: The property or method is accessible within the class and by subclasses.</li>
+</ul>
+
+<h5>5.5 Inheritance in PHP</h5>
+<p>Inheritance allows one class to inherit the properties and methods of another. This promotes code reuse and allows for the extension of existing functionality.</p>
+<ul>
+    <li>Syntax Example:</li>
+    <div class="code-text">
+        <code>
+            class Animal {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; public function speak() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; echo "Animal sound";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            }<br><br>
+
+            class Dog extends Animal {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; public function speak() {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; echo "Bark";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            }<br><br>
+
+            $dog = new Dog();<br>
+            $dog->speak(); // Outputs: "Bark"
+        </code>
+    </div>
+    <li>Explanation:</li>
+    <p>In this example, the <code>Dog</code> class inherits from the <code>Animal</code> class. The <code>Dog</code> class overrides the <code>speak()</code> method to output "Bark" instead of "Animal sound".</p>
+</ul>
+
+<h5>5.6 Conclusion</h5>
+<p>Object-Oriented Programming in PHP allows developers to write cleaner, more modular, and reusable code. By using concepts like classes, objects, inheritance, and polymorphism, you can create powerful, scalable applications. OOP helps model real-world scenarios and makes your code easier to maintain and extend over time.</p>
+
+                </div>
+              
+                </div> 
+          
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

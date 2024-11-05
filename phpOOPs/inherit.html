@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstarp-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon"href="/images/code.png">
+    <title>PhpCodeCrush</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+   
+    <main>
+
+         <nav class="container">
+            <div class="logoDiv">
+                <img class="logo"  alt="Logo" src="/images/clogo1.png"/>
+            </div>
+            <div class="list-items-div">
+                <ul class="lits-items-container">
+                    <li class="list-items"><a href="/index.html">main</a></li>
+                    <li class="list-items"><a href="/index.html">about</a></li>
+                    <li class="list-items"><a href="/practice.html">practice</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <!-- logo -->
+                <i class="bi bi-search"></i>
+            </div>
+        </nav> 
+
+    <div class="background-images">
+        <!-- <img  class="images" src="./images/dots.276a62aa.svg" alt="dotted background"> -->
+       <!-- <img style="top: -40px;" class="images" src="./images/bgblur.19fa1f96.svg" alt="graySparkle"> -->
+        <!-- <img src="./images/hammer.a618d04a.svg" alt="hammer" class="hammer"> -->
+        <img src="./images/spanner.3acd9d9d.svg" alt="spanner" class="spanner">
+    </div>
+
+   
+    <div class="table-super-div">
+        <div class="table-sub-div">
+            <div class="left-table-content">
+                <div class="left-table-paragraph-text">
+                    <h2>PHP Topics</h2>
+                </div>
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP OOP</li></p>
+                <a class="java-topics " href="/phpOOPs/introToOops.html">PHP What is OOP</a>
+                <a class="java-topics " href="/phpOOPs/classObj.html">PHP Classes/Objects</a>
+                <a class="java-topics" href="/phpOOPs/constructor.html">PHP Constructor</a>
+                <a class="java-topics" href="/phpOOPs/destructor.html">PHP Destructor</a>
+                <a class="java-topics activeTopic" href="/phpOOPs/inherit.html">PHP Inheritence</a>
+                <a class="java-topics" href="/phpOOPs/abstractClss.html">PHP Abstract Classes</a>
+                <a class="java-topics" href="/phpOOPs/interface.html">PHP Interfaces</a>
+
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP basics</li></p>
+                <a class="java-topics" href="/practice.html">PHP Introduction to php</a>
+                <a class="java-topics " href="/phpSyntax/syntax.html">PHP Syntax</a>
+                <a class="java-topics" href="/phpDt/dt.html">PHP Data Types</a>
+                <a class="java-topics " href="/phpSuperGlobals/superGlobal.html">PHP Superglobals</a>
+                <a class="java-topics" href="/phpString/string.html">PHP Strings</a>
+                <a class="java-topics" href="/phpIfElse/ifElse.html">PHP If..Else..Elseif</a>
+                <a class="java-topics" href="/phpSwitch/switch.html">PHP Switch</a>
+                <a class="java-topics" href="/phpLoops/loops.html" >PHP Loops</a>
+                <a class="java-topics" href="/phpFunction/func.html">PHP Functions</a>
+                <a class="java-topics" href="/phpArrays/arrays.html">PHP Arrays</a>
+
+                <p><li style="margin: 10px; text-transform: capitalize; font-family:cursive; ">PHP Forms</li></p>
+                <a class="java-topics " href="/phpForm/formHandle.html">PHP Form Handling</a>
+                <a class="java-topics" href="/phpForm/formValidate.html">PHP Form Validaion</a>
+                <a class="java-topics" href="/phpForm/formRequire.html" >PHP Form Required</a>
+                
+           </div>
+
+             <div class="right-table-content">
+                <div class="right-table-paragraph-text">
+                    <h2>PHP Inheritance</h2>
+                </div>
+
+                <div class="right-table-content">
+                    <h4>10. PHP Inheritance</h4>
+                    <p><strong>Inheritance</strong> is one of the fundamental concepts of Object-Oriented Programming (OOP). Inheritance allows a class to inherit the properties and methods of another class. This helps in reusing code and creating a hierarchy of classes. In PHP, inheritance is implemented by using the <code>extends</code> keyword.</p> <br>
+                    
+                    <h5>10.1 Basic Inheritance</h5>
+                    <p>In PHP, a class can inherit from another class, which allows the child class to use the methods and properties of the parent class. This is done using the <code>extends</code> keyword when defining the child class.</p>
+                    <ul>
+                        <li><strong>Syntax Example:</strong></li>
+                        <div class="code-text">
+                            <code>
+                                class Animal {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public $name;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function __construct($name) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $this->name = $name;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                    
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function speak() {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; echo $this->name . " makes a sound!";<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                }<br><br>
+                    
+                                // Child class that inherits from Animal<br>
+                                class Dog extends Animal {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function speak() {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; echo $this->name . " barks!";<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                }<br><br>
+                    
+                                $dog = new Dog("Rex");<br>
+                                $dog->speak();  // Output: Rex barks!
+                            </code>
+                        </div>
+                        <p>In this example, the <code>Dog</code> class inherits from the <code>Animal</code> class. The <code>Dog</code> class overrides the <code>speak()</code> method of the parent class to provide its own implementation. When the <code>speak()</code> method is called on the <code>Dog</code> object, it outputs "Rex barks!"</p>
+                    </ul>
+                    
+                    <h5>10.2 Constructor Inheritance</h5>
+                    <p>If a parent class has a constructor, it can be called in the child class using the <code>parent::__construct()</code> method. This is useful for ensuring that the parent class is properly initialized before any additional logic in the child class is executed.</p>
+                    <ul>
+                        <li><strong>Syntax Example:</strong></li>
+                        <div class="code-text">
+                            <code>
+                                class Animal {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public $name;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function __construct($name) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $this->name = $name;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                                }<br><br>
+                    
+                                class Dog extends Animal {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public $breed;<br><br>
+                    
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function __construct($name, $breed) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parent::__construct($name);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $this->breed = $breed;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br><br>
+                    
+                                }<br><br>
+                    
+                                $dog = new Dog("Rex", "Labrador");<br>
+                                echo $dog->name;  // Output: Rex<br>
+                                echo $dog->breed;  // Output: Labrador
+                            </code>
+                        </div>
+                        <p>In this example, the <code>Dog</code> class calls the parent class's constructor using <code>parent::__construct($name)</code> to initialize the <code>name</code> property, and then adds its own property <code>breed</code>.</p>
+                    </ul>
+                    
+                    <h5>10.3 Overriding Methods</h5>
+                    <p>In PHP, a child class can override methods defined in the parent class. This allows the child class to modify the behavior of the inherited methods. The method in the child class must have the same name and parameters as the one in the parent class.</p>
+                    <ul>
+                        <li><strong>Syntax Example:</strong></li>
+                        <div class="code-text">
+                            <code>
+                                class Animal {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function speak() {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; echo "Animal makes a sound!";<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                }<br><br>
+                    
+                                class Dog extends Animal {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp; public function speak() {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; echo "Dog barks!";<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                }<br><br>
+                    
+                                $dog = new Dog();<br>
+                                $dog->speak();  // Output: Dog barks!
+                            </code>
+                        </div>
+                        <p>In this example, the <code>speak()</code> method in the child class <code>Dog</code> overrides the method in the parent class <code>Animal</code>. When the <code>speak()</code> method is called on a <code>Dog</code> object, it outputs "Dog barks!" instead of the original message from the parent class.</p>
+                    </ul>
+                    
+                    <h5>10.4 Key Points about Inheritance in PHP</h5>
+                    <ul>
+                        <li><strong>Code Reusability</strong>: Inheritance allows child classes to reuse code from the parent class, reducing duplication and improving maintainability.</li>
+                        <li><strong>Access to Parent Class Methods and Properties</strong>: The child class inherits all non-private methods and properties of the parent class.</li>
+                        <li><strong>Method Overriding</strong>: Child classes can override parent class methods to change their behavior.</li>
+                        <li><strong>Single Inheritance</strong>: PHP supports single inheritance, meaning a class can inherit from only one parent class.</li>
+                        <li><strong>Visibility</strong>: Inherited properties and methods are subject to visibility rules. A private method or property from the parent class will not be accessible in the child class.</li>
+                    </ul>
+                    
+                </div>
+              
+                </div> 
+          
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
